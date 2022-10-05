@@ -1,4 +1,6 @@
-﻿/*int number = new Random().Next (100,1000);
+﻿/* Работа на семинаре:
+
+int number = new Random().Next (100,1000);
 
 Console.WriteLine(number);
 int num1 = number/100;
@@ -57,3 +59,60 @@ else if(num2*num2==num1){
 else{
      Console.WriteLine("Одно число не является квадратом другого");
 } */
+
+
+
+
+// Home work
+/*
+Console.WriteLine("Введите трехзначное число");
+int number = int.Parse (Console.ReadLine()!);
+
+if(number >= 100 && number <= 999){
+    int num1 = number/10;
+    int num2 = num1%10;
+    Console.WriteLine(num2);
+}
+else{
+    Console.WriteLine("Число не является трехзначным");
+} */
+
+/*
+Console.WriteLine("Введите число");
+int number = int.Parse (Console.ReadLine()!);
+
+if(number >= 100 && number <= 999){
+    int num1 = number%10;
+    Console.WriteLine(num1);
+}
+
+else if(number >= 1000 && number <= 9999){
+    int num1 = number%100;
+    int num2 = num1/10;
+    Console.WriteLine(num2);
+}
+
+else if(number >= 10000 && number <= 99999){
+    int num1 = number%1000;
+    int num2 = num1/100;
+    Console.WriteLine(num2);
+}
+
+else if(number >= 1 && number <= 99){
+    Console.Write("Третьей цифры нет");
+} */
+
+Console.WriteLine("Введите день недели");
+int number = int.Parse (Console.ReadLine()!);
+
+if(number <= 5){
+    Console.WriteLine("Нет");
+}
+
+else if(number > 5 && number <= 7){
+    Console.WriteLine("Да");
+}
+
+else if(number >= 8){
+    Console.WriteLine("Не является днем недели");
+}
